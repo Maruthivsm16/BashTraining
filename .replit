@@ -1,8 +1,9 @@
 entrypoint = "main.sh"
-modules = ["bash"]
+modules = ["bash", "qbasic"]
 
 [nix]
 channel = "stable-24_05"
+packages = ["vim", "cron", "chkcrontab", "emacsPackages.crontab-mode", "python311Packages.crontab", "iproute2", "python311Packages.pytest", "python312Packages.pytest_7", "python311Packages.pytest_7", "python312Packages.pytest", "python311Packages.pytest-dependency"]
 
 [deployment]
 run = ["bash", "main.sh"]
