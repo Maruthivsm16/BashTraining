@@ -3,6 +3,7 @@ modules = ["bash"]
 
 [nix]
 channel = "stable-24_05"
+packages = ["vim", "systemdUkify", "iproute2", "nettools", "inetutils", "nedit", "unixtools.ping", "iputils", "input-utils", "haskellPackages.systemd", "systemd", "cron", "cron"]
 
 [deployment]
 run = ["bash", "main.sh"]
