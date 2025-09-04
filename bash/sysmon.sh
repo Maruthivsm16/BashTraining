@@ -9,13 +9,13 @@ HOST_TO_PING="172.31.107.226"
 alert() {
     message="$1"
     echo "ALERT: $message"
-    LOG_FILE="/home/runner/workspace/sysmon.log"
+    LOG_FILE="/workspaces/codespaces-blank/BashTraining/sysmon.log"
     echo "$(date '+%Y-%m-%d %H:%M:%S') - ALERT: $message" >> "$LOG_FILE"
 }
 
-info() {
-    message="$1"
-    echo "INFO: $message"
+#info() {
+#    message="$1"
+#    echo "INFO: $message"
 }
 
 # Disk Usage Check
